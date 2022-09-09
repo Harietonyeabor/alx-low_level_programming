@@ -3,9 +3,8 @@
 #include <time.h>
 /**
  * main -  Assign values based  on
- * the last digit of
- * 
- * Return: Always 0 (success)
+ * the last digit of the number
+ *  Return: Always 0 (success)
  */
 int main(void)
 {
