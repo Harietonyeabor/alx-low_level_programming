@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -  Assign values based  on
- * the last digit of the number
- *  Return: Always 0 (success)
+ * main - Entry point
+ * Description: checks on the last digit of the assigned var
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 	int n, m;
 
 	srand(time(0));
-ii	n = rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	m = n % 10;
 	if (m > 5)
 	{
@@ -27,5 +27,4 @@ ii	n = rand() - RAND_MAX / 2;
 	}
 	return (0);
 }
-
 
