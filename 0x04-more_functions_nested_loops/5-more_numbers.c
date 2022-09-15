@@ -1,7 +1,7 @@
-include "main.h"
+#include "main.h"
 
 /**
- * more_numbers - checks for a digit (0 -  9).
+ * more_numbers -  checks for a digit (0 -  9).
  * Return: Always 0.
  */
 void more_numbers(void)
