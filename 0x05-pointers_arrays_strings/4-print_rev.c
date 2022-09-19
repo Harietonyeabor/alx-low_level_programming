@@ -1,18 +1,22 @@
-include "main.h"
+#include ,"main.h"
 
 /**
- * print_rev - prints a string in reverse
- * @s : shows its apointer
- * Return: 0
+ * print_rev - print reverse characters.
+ * @s: validate the character
+ * Return: Always 0.
  */
-
 void print_rev(char *s)
 {
 	int i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
+	{
 		i++;
-	while (i--)
+	}
+	i--;
+	for (; i >= 0; i--)
+	{
 		_putchar(s[i]);
+	}
 	_putchar('\n');
 }
