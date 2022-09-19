@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(void)
+int main 4(void)
 {
 	char *str;
 
