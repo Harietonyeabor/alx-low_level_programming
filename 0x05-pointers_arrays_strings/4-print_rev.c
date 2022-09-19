@@ -1,5 +1,7 @@
-#include ,"main.h"
-
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
+s
 /**
  * print_rev - print reverse characters.
  * @s: validate the character
