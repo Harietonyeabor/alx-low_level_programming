@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcat -  function that concatenates two strings.
+/x * _strcat -  function that concatenates two strings.
  * @dest: s1
  * @src: s2
  * Return: Always 0.
@@ -28,3 +28,4 @@ char *_strcat(char *dest, char *src)
 	}
 	return (dest);
 }
+
