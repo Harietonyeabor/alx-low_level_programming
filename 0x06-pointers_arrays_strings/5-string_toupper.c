@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper - Function that changes all lowercaseletters of a string to uppercase.
+ * string_toupper - Function that changes all lowercase letters of a string to uppercase.
  *
  * @s: s is the array
  *
