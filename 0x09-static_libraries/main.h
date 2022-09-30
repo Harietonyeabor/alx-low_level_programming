@@ -1,12 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-/*
- * File: main.h
- * Auth: Henrietta
- * Desc: Header file containing the prototypes of all functions
- *       included in the static library libmain.a.
- */
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
 int _putchar(char c);
 int _islower(int c);
