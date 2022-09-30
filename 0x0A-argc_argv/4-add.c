@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * Descrp - program that adds positive numbers
+ * main - entry point for program
  *
  * @argc: count of args present
  * @argv: array of char * pointing to args
