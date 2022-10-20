@@ -1,42 +1,35 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
-
+#include <string.h>
 /**
- * _strlen - function that returns the length of a string.
- * @s : s is a character
- * Return: value is i
- */
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/**
- * add_node - add a new node at beginning of a list_t list.
- * @head: head of a list_t list.
- * @str: value to insert into element.
- * Return: the number of nodes.
+ * add_node - adds a node to the head of a linked list
+ * @head: pointer to a list_t pointer that points to the head struct
+ * @str: string to add as node
+ *
+ * Return: pointer to new head of list, NULL on failure
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *add;
+	list_t *temp_head;
+	int length = 0;
 
-	add = malloc(sizeof(list_t));
-	if (add == NULL)
+	temp_head = *head;
+	*head = malloc(sizeof(list_t));
+	if (!*head)
 		return (NULL);
-	add->str = strdup(str);
-
-	add->len = _strlen(str);
-	add->next = *head;
-	*head = add;
-
-	return (add);
+	while (str[length])
+		length++;
+	(*head)->len = length;
+	if (str)
+	{
+		(*head)->str = strdup(str);
+		if (!(*head)->str)
+		{
+			free(*head);
+			return (NULL);
+		}
+	}
+	else
+		(*head)->str = NULL;
+	(*head)->next = temp_head;
+	return (*head);
 }
